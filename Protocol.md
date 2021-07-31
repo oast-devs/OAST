@@ -82,7 +82,14 @@ __*OASTScenarioOutput*__W
     | +--------------------+ |                 | | passage_for_out_1  |                               |
     +------------------------+                 | +--------------------+                               |
                                                +------------------------------------------------------+
-    
+
+## Workflow
+
+oast scenario should be prepared as json files scenario.json. This file should contain:
+ * a list of OASTScenarioItem representing all the actors in the scenario (i.e. all the dynamic elements for which the simulation should be performed together with their initial conditions.)
+ * a list of OASTScenarioOutput representing all the calculation to be performed (i.e. integrate satellite x, with the initial conditions y during timeslice t)
+
+
 ## API_version
 
 1: initial version
